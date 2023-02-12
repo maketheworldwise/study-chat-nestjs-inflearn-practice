@@ -1,1 +1,18 @@
-alert('hello world');
+// cdn - socket.io
+const socket = io('/');
+
+const getElementById = (id) => document.getElementById(id) || null;
+
+const helloStrangerElement = getElementById('hello_stranger');
+const chattingBoxElement = getElementById('chatting_box');
+const chatFormElement = getElementById('chat_form');
+
+function helloUser() {
+  const username = prompt('What is your name?');
+}
+
+function init() {
+  helloUser();
+}
+
+init();
